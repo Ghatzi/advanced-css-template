@@ -1,0 +1,24 @@
+.header {
+  height: 85vh;
+  background-image: url(../../img/freelancer.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+    only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+    only screen and (min-width: 125em) {
+    background-image: url(../../img/freelancer_sml.jpg);
+  }
+
+  @include respond(phone) {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+  }
+
+  &__text-box {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+  }
+}

@@ -1,0 +1,25 @@
+.tuition-box {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(126, 213, 111, 0.85),
+    rgba(40, 180, 133, 0.85)
+  );
+  color: var(--color-white);
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: var(--box-shadow-dark);
+  transition: transform 0.3s;
+
+  @include respond(tab-port) {
+    padding: 2rem;
+  }
+
+  &:hover {
+    -webkit-transform: translateY(-1.5rem) scale(1.03);
+    -moz-transform: translateY(-1.5rem) scale(1.03);
+    -ms-transform: translateY(-1.5rem) scale(1.03);
+    -o-transform: translateY(-1.5rem) scale(1.03);
+    transform: translateY(-1.5rem) scale(1.03);
+  }
+}

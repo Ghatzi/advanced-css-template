@@ -1,0 +1,23 @@
+.section-hiring {
+  background-color: var(--color-light-grey);
+  padding: 4rem 0;
+}
+
+.section-stack {
+  position: relative;
+  padding: 10rem 0;
+}
+
+.section-tuition {
+  padding: 5rem 0 10rem;
+  background-color: var(--color-light-grey);
+}
+
+.section-contact {
+  padding: 10rem 0;
+  background-image: linear-gradient(
+    to right bottom,
+    var(--color-primary),
+    var(--color-secondary)
+  );
+}

@@ -1,0 +1,34 @@
+.stack {
+  width: 75%;
+  margin: 0 auto;
+  box-shadow: var(--box-shadow-dark);
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 4rem;
+  -webkit-transform: skewX(-12deg);
+  -moz-transform: skewX(-12deg);
+  -ms-transform: skewX(-12deg);
+  -o-transform: skewX(-12deg);
+  transform: skewX(-12deg);
+
+  @include respond(tab-port) {
+    width: 100%;
+  }
+
+  @include respond(phone) {
+    -webkit-transform: skewX(0);
+    -moz-transform: skewX(0);
+    -ms-transform: skewX(0);
+    -o-transform: skewX(0);
+    transform: skewX(0);
+  }
+
+  ul {
+    margin: 3rem auto;
+
+    li {
+      display: inline-block;
+      padding: 1rem;
+      font-size: var(--font-size-xxsml);
+    }
+  }
+}
